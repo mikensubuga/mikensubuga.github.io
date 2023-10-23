@@ -2,25 +2,25 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Research Scientist, <a href='https://research-information.bris.ac.uk/en/persons/mike-nsubuga'>University of Bristol</a>, UK
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: mike-nsubuga.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>BS8 1UH</p><br>
+    <p>United Kingdom</p>
+ 
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+news: false  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi Mike, Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi! I am a PhD student at the University of Bristol and a Data Scientist at the [Jean Golding Institute](https://www.bristol.ac.uk/golding/). My PhD is funded by the Medical Research Council(MRC) under GW4 BioMed2 MRC DTP under the Population Health theme. My project under the supervision of [Prof Kristen Reyher](https://research-information.bris.ac.uk/en/persons/kristen-k-reyher), [Dr. Sion Bayliss](https://research-information.bris.ac.uk/en/persons/sion-c-bayliss), [Prof Andrew Dowsey](https://research-information.bris.ac.uk/en/persons/andrew-dowsey), and [Dr. Lauren Cowley](https://researchportal.bath.ac.uk/en/persons/lauren-cowley) centers on collaborating with the UK Health Security Agency(UKHSA) to develop cutting-edge machine learning tools aimed at forecasting outbreaks of foodborne diseases. These tools are used to support public health decision-making and facilitate rapid response to future outbreaks.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I previously did an MSc in Bioinformatics supported by the Fogarty International Center(FIC) of the National Institutes of Health(NIH) under the EANBIT project at Makerere University where my research focussed on evaluating the practicality and broader adaptability of Machine Learning models, particularly in the realm of predicting antimicrobial resistance within low-middle-income countries(LMICs).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am passionate about the field of innovations in global health and I have worked on a variety of projects spanning different domains, including virtual reality technology in medical education and the utilization of large language models for pandemic preparedness in LMICs.
