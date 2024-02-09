@@ -8,7 +8,7 @@ nav_order: 1
 ---
 <!-- _pages/publications.md -->
 <div class="publications">
- <p>An up-to-date list is available on <a href="https://scholar.google.com/citations?hl=en&user=nS66mKMAAAAJ">Google Scholar</a>.</p>
+ <p>An up-to-date list is available on <a href="https://scholar.google.com/citations?hl=en&user=czbZn2IAAAAJ&hl">Google Scholar</a>.</p>
 
 
 {% bibliography -f {{ site.scholar.bibliography }} %}
