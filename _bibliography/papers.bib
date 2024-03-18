@@ -3,24 +3,25 @@
 
 @string{aps = {American Physical Society,}}
 
-
-@article{buyego_feasibility_2022,
-  	abbr={BMC},
-	title = {Feasibility of virtual reality based training for optimising {COVID}-19 case handling in {Uganda}},
-	volume = {22},
-	issn = {1472-6920},
-	url = {https://doi.org/10.1186/s12909-022-03294-x},
-	doi = {10.1186/s12909-022-03294-x},
-	abstract = {Epidemics and pandemics are causing high morbidity and mortality on a still-evolving scale exemplified by the COVID-19 pandemic. Infection prevention and control (IPC) training for frontline health workers is thus essential. However, classroom or hospital ward-based training portends an infection risk due to the in-person interaction of participants. We explored the use of Virtual Reality (VR) simulations for frontline health worker training since it trains participants without exposing them to infections that would arise from in-person training. It does away with the requirement for expensive personal protective equipment (PPE) that has been in acute shortage and improves learning, retention, and recall. This represents the first attempt in deploying VR-based pedagogy in a Ugandan medical education context.},
+@article{nsubuga_generalizability_2024,
+	abbr={BMC},
+	title = {Generalizability of machine learning in predicting antimicrobial resistance in {E}. coli: a multi-country case study in {Africa}},
+	volume = {25},
+	issn = {1471-2164},
+	shorttitle = {Generalizability of machine learning in predicting antimicrobial resistance in {E}. coli},
+	url = {https://doi.org/10.1186/s12864-024-10214-4},
+	doi = {10.1186/s12864-024-10214-4},
+	abstract = {Antimicrobial resistance (AMR) remains a significant global health threat particularly impacting low- and middle-income countries (LMICs). These regions often grapple with limited healthcare resources and access to advanced diagnostic tools. Consequently, there is a pressing need for innovative approaches that can enhance AMR surveillance and management. Machine learning (ML) though underutilized in these settings, presents a promising avenue. This study leverages ML models trained on whole-genome sequencing data from England, where such data is more readily available, to predict AMR in E. coli, targeting key antibiotics such as ciprofloxacin, ampicillin, and cefotaxime. A crucial part of our work involved the validation of these models using an independent dataset from Africa, specifically from Uganda, Nigeria, and Tanzania, to ascertain their applicability and effectiveness in LMICs.},
 	number = {1},
-	journal = {BMC Medical Education},
-	author = {Buyego, Paul and Katwesigye, Elizabeth and Kebirungi, Grace and Nsubuga, Mike and Nakyejwe, Shirley and Cruz, Phillip and McCarthy, Meghan C. and Hurt, Darrell and Kambugu, Andrew and Arinaitwe, Joseph Walter and Ssekabira, Umaru and Jjingo, Daudi},
-	month = apr,
-	year = {2022},
-	pages = {274},
-  selected ={true},
-  altmetric={},
-  dimensions={true},
+	urldate = {2024-03-18},
+	journal = {BMC Genomics},
+	author = {Nsubuga, Mike and Galiwango, Ronald and Jjingo, Daudi and Mboowa, Gerald},
+	month = mar,
+	year = {2024},
+	keywords = {Africa, Antimicrobial resistance, E. coli, Machine learning, Whole-genome sequencing},
+	pages = {287},
+	selected ={true},
+
 }
 
 @article{please_virtual_2024,
@@ -39,4 +40,44 @@
   	dimensions={true},
 	selected ={true},
 
+}
+
+@phdthesis{nsubuga_machine_2023,
+	type = {Thesis},
+	title = {A machine learning approach to predict {E}. coli antibacterial resistance using whole-genome sequencing data},
+	url = {http://makir.mak.ac.ug/handle/10570/13162},
+	abstract = {Background: Antimicrobial resistance (AMR) is a significant global health threat, particularly impacting low- and middle-income countries(LMICS) such as Uganda, where reliable and rapid methods for detecting AMR in E. coli and other pathogens are scarce. This lack can lead to inappropriate treatment and the spread of drug-resistant infections. This thesis undertakes a comprehensive study, where various machine learning models to predict AMR in E. coli for ciprofloxacin(CIP), ampicillin(AMP), and cefotaxime(CTX) were trained on whole genome sequencing (WGS) data from England where such data is more readily available. A separate Ugandan dataset was used for validation purposes, further demonstrating the generalizability and effectiveness of the models in LMICS.
+
+Methods: 1496 (CIP), 1428 (CTX), and 1396 (AMP) sequences from England were divided into training and testing. 42 from Uganda were used for validation. Eight different machine learning models were trained and tested: Logistic Regression(LR), Random Forest(RF), Gradient Boosting(GB), XGBoost(XGB), LightGBM(LGBM), CatBoost(CB), Feed-Forward Neural Network(FFNN), and Support Vector Machine(SVM). The models were evaluated based on precision, recall, and Area Under the Receiver Operating Characteristic Curve (AUC-ROC). Upsampling techniques were implemented to address class imbalance in the data.
+
+Results: Model predictive performance varied significantly across different antibiotics, underlining the critical role of model selection and dataset characteristics. Notably, the FFNN model demonstrated superior performance during testing for CIP (accuracy 84\%; F1 0.55; AUC 91\%), LR for CTX (accuracy 91\%; F1 0.37; AUC 83\%) and GB for AMP (accuracy 57\%; F1 0.62, AUC 53\%), while the LGBM and RF models outperformed others in same scenarios (p {\textless} 0.001). Upsampling did not significantly improve the models' performance, underscoring the complexity and high-dimensionality of SNP data. Despite high accuracy scores with the Ugandan validation dataset(FFNN with CIP accuracy 95\%, LR with AMP accuracy 98\% and GB with CTX accuracy 65\%), the models struggled with the recall metric due to severe class imbalance. Key mutations associated with antimicrobial resistance were identified for these antibiotics.
+
+Conclusion: As the threat of AMR continues to rise, the successful application of these models - particularly on the Ugandan dataset, signals a promising avenue for improving AMR detection and treatment strategies in LMICS were genomic data is scarce. This work thus not only expands our current understanding of the genetic underpinnings of AMR but also provides a robust methodological framework that can guide future research and applications in the fight against antimicrobial resistance.},
+	language = {en},
+	urldate = {2024-03-14},
+	school = {Makerere University},
+	author = {Nsubuga, Mike},
+	year = {2023},
+	note = {Accepted: 2024-02-28T08:06:49Z},
+	file = {Snapshot:/Users/mikensubuga/Zotero/storage/IIBKXDHA/13162.html:text/html},
+}
+
+
+@article{buyego_feasibility_2022,
+  	abbr={BMC},
+	title = {Feasibility of virtual reality based training for optimising {COVID}-19 case handling in {Uganda}},
+	volume = {22},
+	issn = {1472-6920},
+	url = {https://doi.org/10.1186/s12909-022-03294-x},
+	doi = {10.1186/s12909-022-03294-x},
+	abstract = {Epidemics and pandemics are causing high morbidity and mortality on a still-evolving scale exemplified by the COVID-19 pandemic. Infection prevention and control (IPC) training for frontline health workers is thus essential. However, classroom or hospital ward-based training portends an infection risk due to the in-person interaction of participants. We explored the use of Virtual Reality (VR) simulations for frontline health worker training since it trains participants without exposing them to infections that would arise from in-person training. It does away with the requirement for expensive personal protective equipment (PPE) that has been in acute shortage and improves learning, retention, and recall. This represents the first attempt in deploying VR-based pedagogy in a Ugandan medical education context.},
+	number = {1},
+	journal = {BMC Medical Education},
+	author = {Buyego, Paul and Katwesigye, Elizabeth and Kebirungi, Grace and Nsubuga, Mike and Nakyejwe, Shirley and Cruz, Phillip and McCarthy, Meghan C. and Hurt, Darrell and Kambugu, Andrew and Arinaitwe, Joseph Walter and Ssekabira, Umaru and Jjingo, Daudi},
+	month = apr,
+	year = {2022},
+	pages = {274},
+  selected ={true},
+  altmetric={},
+  dimensions={true},
 }
