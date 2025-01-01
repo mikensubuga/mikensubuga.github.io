@@ -3,20 +3,20 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Mike
+first_name: Gerald
 middle_name: 
-last_name: Nsubuga
-email: nsubugamike021@gmail.com
+last_name:Mboowa
+email: gmboowa@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Mike Nsubuga | Research Scientist, University of Bristol, UK & Makerere University, Uganda. | Specializing in Data Science for Global Health.
+  Mike Nsubuga | Scientist, Infectious Diseases Institute & Makerere University, Uganda. | Bioinformatics | Genomics | Data Science | Global Health.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-keywords: academic-webiste, mike-nsubuga, nsubuga  # add your own keywords or leave empty
+keywords: academic-webiste, gerald-mboowa, mboowa  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://mikensubuga.github.io # the base hostname & protocol for your site
+url: https://gmboowa.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
 last_updated:  # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
