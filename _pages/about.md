@@ -6,7 +6,7 @@ subtitle: Research Scientist, <a href='https://research-information.bris.ac.uk/e
 
 profile:
   align: right
-  image: mike-nsubuga.png
+  image: 
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>BS8 1UH</p><br>
