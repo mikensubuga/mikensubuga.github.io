@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Bioinformatics Implementation Scientist, <a href='[https://research-information.bris.ac.uk/en/persons/mike-nsubuga](https://africacdc.org/people/gerald-mboowa/)'>Africa CDC</a>, Addis Ababa, Ethiopia
+subtitle: Bioinformatics Implementation Scientist, <a href='[https://africacdc.org/people/gerald-mboowa/]'>Africa CDC</a>, Addis Ababa, Ethiopia
 
 profile:
   align: right
