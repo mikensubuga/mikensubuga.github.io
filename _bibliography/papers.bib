@@ -1,6 +1,5 @@
 ---
 ---
-
 @string{aps = {American Physical Society,}}
 @article{please_virtual_2024,
   abbr       = {Science},
@@ -11,7 +10,7 @@
   abstract   = {The past 2 years, during which waves of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) variants swept the globe, have starkly highlighted health disparities across nations. Tegally et al. show how the coordinated efforts of talented African scientists have in a short time made great contributions to pandemic surveillance and data gathering. Their efforts and initiatives have provided early warning that has likely benefited wealthier countries more than their own. Genomic surveillance identified the emergence of the highly transmissible Beta and Omicron variants and now the appearance of Omicron sublineages in Africa. However, it is imperative that technology transfer for diagnostics and vaccines, as well the logistic wherewithal to produce and deploy them, match the data-gathering effort.},
   number     = {1},
   journal    = {Science},
-  author     = {Tegally, Houriiyah and San, James E, and Cotten, Matthew and Moir, Monika and Tegomoh, Bryan and Mboowa, Gerald and 492, Others}, 
+  author     = {Tegally, Houriiyah and San, James E, and Cotten, Matthew and Moir, Monika and Tegomoh, Bryan and Mboowa, Gerald and 492, Other Authors}, 
   month      = Sep,
   year       = {2022},
   altmetric  = {},
@@ -88,47 +87,71 @@
   pages      = {287},
   selected   = {true}
 }
-@article{babirye_machine_2024,
-  abbr  = {BMC},
-	title = {Machine learning-based prediction of antibiotic resistance in {Mycobacterium} tuberculosis clinical isolates from {Uganda}},
-	volume = {24},
-	issn = {1471-2334},
-	url = {https://doi.org/10.1186/s12879-024-10282-7},
-	doi = {10.1186/s12879-024-10282-7},
-	abstract = {Efforts toward tuberculosis management and control are challenged by the emergence of Mycobacterium tuberculosis (MTB) resistance to existing anti-TB drugs. This study aimed to explore the potential of machine learning algorithms in predicting drug resistance of four anti-TB drugs (rifampicin, isoniazid, streptomycin, and ethambutol) in MTB using whole-genome sequence and clinical data from Uganda. We also assessed the model’s generalizability on another dataset from South Africa.},
-	number = {1},
-	urldate = {2024-12-05},
-	journal = {BMC Infectious Diseases},
-	author = {Babirye, Sandra Ruth and Nsubuga, Mike and Mboowa, Gerald and Batte, Charles and Galiwango, Ronald and Kateete, David Patrick},
-	month = Dec,
-	year = {2024},
-	keywords = {Antimicrobial resistance, Clinical, Drug resistance, Genes, Machine learning, Mutations, Mycobacterium tuberculosis, Whole-genome sequence},
-	pages = {1391},
-	file = {Full Text PDF:/Users/mikensubuga/Zotero/storage/8GCBU32P/Babirye et al. - 2024 - Machine learning-based prediction of antibiotic re.pdf:application/pdf;Snapshot:/Users/mikensubuga/Zotero/storage/TE6TEZDF/s12879-024-10282-7.html:text/html},
+ @article{babirye_machine_2024,
+ abbr  = {BMC},
+ title = {Machine learning-based prediction of antibiotic resistance in {Mycobacterium} tuberculosis clinical isolates from {Uganda}},
+ volume = {24},
+ issn = {1471-2334},
+ url = {https://doi.org/10.1186/s12879-024-10282-7},
+ doi = {10.1186/s12879-024-10282-7},
+ abstract = {Efforts toward tuberculosis management and control are challenged by the emergence of Mycobacterium tuberculosis (MTB) resistance to existing anti-TB drugs. This study aimed to explore the potential of machine learning algorithms in predicting drug resistance of four anti-TB drugs (rifampicin, isoniazid, streptomycin, and ethambutol) in MTB using whole-genome sequence and clinical data from Uganda. We also assessed the model’s generalizability on another dataset from South Africa.},
+ number = {1},
+ urldate = {2024-12-05},
+ journal = {BMC Infectious Diseases},
+ author = {Babirye, Sandra Ruth and Nsubuga, Mike and Mboowa, Gerald and Batte, Charles and Galiwango, Ronald and Kateete, David Patrick},
+ month = Dec,
+ year = {2024},
+ keywords = {Antimicrobial resistance, Clinical, Drug resistance, Genes, Machine learning, Mutations, Mycobacterium tuberculosis, Whole-genome sequence},
+ pages = {1391},
+ file = {Full Text PDF:/Users/mikensubuga/Zotero/storage/8GCBU32P/Babirye et al. - 2024 - Machine learning-based prediction of antibiotic re.pdf:application/pdf;Snapshot:/Users/mikensubuga/Zotero/storage/TE6TEZDF/s12879-024-10282-7.html:text/html},
   selected   = {true},
   altmetric   = {},
   dimensions = {true},
 }
-@phdthesis{nsubuga_machine_2023,
-  type     = {Thesis},
-  title    = {A machine learning approach to predict {E}. coli antibacterial resistance using whole-genome sequencing data},
-  url      = {http://makir.mak.ac.ug/handle/10570/13162},
-  abstract = {Background: Antimicrobial resistance (AMR) is a significant global health threat, particularly impacting low- and middle-income countries(LMICS) such as Uganda, where reliable and rapid methods for detecting AMR in E. coli and other pathogens are scarce. This lack can lead to inappropriate treatment and the spread of drug-resistant infections. This thesis undertakes a comprehensive study, where various machine learning models to predict AMR in E. coli for ciprofloxacin(CIP), ampicillin(AMP), and cefotaxime(CTX) were trained on whole genome sequencing (WGS) data from England where such data is more readily available. A separate Ugandan dataset was used for validation purposes, further demonstrating the generalizability and effectiveness of the models in LMICS.
-              
-              Methods: 1496 (CIP), 1428 (CTX), and 1396 (AMP) sequences from England were divided into training and testing. 42 from Uganda were used for validation. Eight different machine learning models were trained and tested: Logistic Regression(LR), Random Forest(RF), Gradient Boosting(GB), XGBoost(XGB), LightGBM(LGBM), CatBoost(CB), Feed-Forward Neural Network(FFNN), and Support Vector Machine(SVM). The models were evaluated based on precision, recall, and Area Under the Receiver Operating Characteristic Curve (AUC-ROC). Upsampling techniques were implemented to address class imbalance in the data.
-              
-              Results: Model predictive performance varied significantly across different antibiotics, underlining the critical role of model selection and dataset characteristics. Notably, the FFNN model demonstrated superior performance during testing for CIP (accuracy 84\%; F1 0.55; AUC 91\%), LR for CTX (accuracy 91\%; F1 0.37; AUC 83\%) and GB for AMP (accuracy 57\%; F1 0.62, AUC 53\%), while the LGBM and RF models outperformed others in same scenarios (p {\textless} 0.001). Upsampling did not significantly improve the models' performance, underscoring the complexity and high-dimensionality of SNP data. Despite high accuracy scores with the Ugandan validation dataset(FFNN with CIP accuracy 95\%, LR with AMP accuracy 98\% and GB with CTX accuracy 65\%), the models struggled with the recall metric due to severe class imbalance. Key mutations associated with antimicrobial resistance were identified for these antibiotics.
-              
-              Conclusion: As the threat of AMR continues to rise, the successful application of these models - particularly on the Ugandan dataset, signals a promising avenue for improving AMR detection and treatment strategies in LMICS were genomic data is scarce. This work thus not only expands our current understanding of the genetic underpinnings of AMR but also provides a robust methodological framework that can guide future research and applications in the fight against antimicrobial resistance.},
-  language = {en},
-  urldate  = {2024-03-14},
-  school   = {Makerere University},
-  author   = {Nsubuga, Mike},
-  year     = {2023},
-  note     = {Accepted: 2024-02-28T08:06:49Z},
-  file     = {Snapshot:/Users/mikensubuga/Zotero/storage/IIBKXDHA/13162.html:text/html}
+ @article{waste_water_metagenomics_2024,
+ abbr  = {PLOS Global Public Health},
+ title = {Wastewater metagenomics in Africa: Opportunities and challenges},
+ volume = {4},
+ issn = {12},
+ url = {https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0004044},
+ doi = {10.1371/journal.pgph.0004044},
+ abstract = {The advent of metagenomics has dramatically expanded our understanding of microbial
+communities, particularly through the study of wastewater, which serves as a rich source of
+microbial data. In Africa, wastewater metagenomics presents unparalleled opportunities for
+public health monitoring, antimicrobial resistance (AMR) tracking, and the discovery of new
+microbial species and functions. Utilizing high-throughput sequencing (HTS) technologies,
+this method allows for direct analysis of nucleic acids from wastewater samples, providing a
+cost-effective and comprehensive approach for pathogen surveillance. The potential of
+wastewater metagenomics in Africa is vast. It can revolutionize public health monitoring by
+acting as an early warning system for infectious disease outbreaks, offering near real-time
+data to shape effective responses. This is especially critical in densely populated urban
+areas with poor sanitation, where the risk of disease spread is high. Moreover, this approach
+enables the detection of emerging pathogens and insights into environmental health. However,
+the implementation of wastewater metagenomics in Africa faces several challenges.
+These include variability in wastewater composition due to differing local customs, limited
+infrastructure for sequencing and data analysis, and a shortage of bioinformatics expertise.
+Socio-political and ethical issues also complicate data sharing and the equitable distribution
+of benefits. To overcome these challenges, there is a need to enhance capacity through collaborative training, 
+infrastructural development, and international partnerships. Investing
+and sustaining local genomics and bioinformatics infrastructure and expertise is crucial.
+Moreover, establishing robust data governance frameworks and engaging communities are
+essential for leveraging metagenomics to advance scientific knowledge and deliver tangible
+health and economic benefits. With strategic planning and collaboration, Africa can harness
+the transformative potential of wastewater metagenomics to improve disease surveillance,
+combat AMR, and foster scientific innovation, contributing significantly to sustainable development
+and improved quality of life.},
+ number = {e0004044},
+ urldate = {2024-12-20},
+ journal = {PLOS Global Public Health},
+ author = {Kanyerezi, Stephen and Guerfali, Fatma Zahra and Anzaku, Abbas Abel and Babaleye, Oluwasegun Adesina and Calvert, Tracey-Joshua and Nguinkal, Julien Alban and  AMOOID, Oluwaseun Paul and Atri, Chiraz and Khan, Waqasuddin and Saleh, Iqra and Nisar, M Imran and Kasambula, Arthur Shem and Morapedi, Koketso and Mboowa, Gerald},
+ month = Dec,
+ year = {2024},
+ keywords = {Africa, Wastewater surveillance, Metagenomics},
+ pages = {},
+ selected   = {true},
+  altmetric   = {},
+  dimensions = {true},
 }
-
 @misc{mboowa_rise_2024,
   title      = {The rise of pathogen genomics in {Africa}},
   copyright  = {http://creativecommons.org/licenses/by/4.0/},
@@ -142,7 +165,7 @@
   month      = May,
   year       = {2024},
   keywords   = {Africa, Data sharing, Genome sequencing, Pathogen Genomic data, Public health},
-  selected   = {false},
+  selected   = {true},
   altmetric   = {},
   dimensions = {true},
 }
