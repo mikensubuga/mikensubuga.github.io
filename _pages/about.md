@@ -23,8 +23,8 @@ Hi, I’m Gerald Mboowa, a bioinformatics implementation expert dedicated to adv
 
 I am currently contributing to impactful global health projects as part of my role at the Broad Institute, building on years of experience in implementing bioinformatics frameworks for infectious disease surveillance. My expertise focuses on the application of next-generation sequencing, machine learning, and genomic data analysis to solve critical public health challenges.
 
-My work spans antimicrobial resistance, genomics, and infectious disease surveillance, with a particular focus on creating equitable solutions for LMICs. I have collaborated with global health organizations such as Africa CDC, where I implemented genomic surveillance systems to strengthen disease detection and response capabilities across the continent.
+My work spans antimicrobial resistance, genomics, and infectious disease surveillance, with a particular focus on creating equitable solutions for LMICs. I have collaborated with global health organizations such as Africa CDC, where I participated in implementing genomic surveillance programs to strengthen disease detection and response capabilities across the continent.
 
-I am deeply passionate about translating research into actionable public health outcomes and fostering innovations in education and health systems. My current projects involve leveraging advanced bioinformatics tools to address HIV drug resistance and improve genomic medicine in Africa.
+I am deeply passionate about translating research into actionable public health outcomes and fostering innovations in education and health systems. My projects involve leveraging advanced bioinformatics tools to address drug resistance and improve public health. I am also supporting Genomics, Bioinformatics, and Data Science programs at <a href="https://chs.mak.ac.ug/team/gerald-mboowa" target="_blank">Makerere University</a>
 
 Let’s connect to explore collaborative opportunities in advancing global health, genomics, and public health innovation!
