@@ -6,7 +6,7 @@ subtitle: Bioinformatics Implementation Scientist, <a href='https://africacdc.or
 
 profile:
   align: right
-  image: mike-nsubuga.png
+  image: Gerald-Mboowa.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p></p><br>
