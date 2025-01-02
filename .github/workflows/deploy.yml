@@ -3,11 +3,9 @@ name: deploy
 on:
   push:
     branches:
-      - master
       - main
   pull_request:
     branches:
-      - master
       - main
   workflow_dispatch:
 
@@ -19,33 +17,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout 🛎️
+    - name: checkout code
       uses: actions/checkout@v3
 
-    - name: Setup Ruby
+    - name: setup ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.2.2'
         bundler-cache: true
 
-    - name: Install Python and Node Dependencies
+    - name: install dependencies
       run: |
         python3 -m pip install --upgrade pip
-        pip3 install --upgrade jupyter
-        npm install -g mermaid.cli
-        npm install -g purgecss
+        pip3 install jupyter
+        npm install -g sass@1.49.11
+        npm install -g @mermaid-js/mermaid-cli
 
-    - name: Build Site 🔧
+    - name: build site
       run: |
         export JEKYLL_ENV=production
         bundle install
         bundle exec jekyll build --lsi
-        purgecss -c purgecss.config.js
 
-    - name: deploy 🚀
+    - name: deploy to github pages
       if: github.event_name != 'pull_request'
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: _site
         branch: gh-pages
-
