@@ -9,8 +9,8 @@ profile:
   image: 
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>BS8 1UH</p><br>
-    <p>United Kingdom</p>
+    <p> </p><br>
+    <p> </p>
  
 
 news: false  # includes a list of news items
