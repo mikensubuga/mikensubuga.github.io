@@ -1,7 +1,7 @@
 ---
 layout: about
 title: about
-permalink: /about/
+permalink: 
 subtitle: Bioinformatics Implementation Scientist, <a href='https://africacdc.org/people/gerald-mboowa/'>Africa CDC</a>, Addis Ababa, Ethiopia
 
 profile:
