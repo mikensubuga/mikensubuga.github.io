@@ -6,12 +6,12 @@ subtitle: Bioinformatics Implementation Scientist, <a href='https://africacdc.or
 
 profile:
   align: right
-  image: /assets/img/prof_pic.png
-  image_circular: true # crops the image to make it circular
+  image: Gerald-Mboowa.png
+  image_circular: false # crops the image to make it circular
   more_info: >
     <p></p><br>
     <p></p>
-    <img src="/assets/img/prof_pic.png" alt="Profile Picture" style="border-radius: 50%; width: 150px; height: 150px;">
+ 
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
