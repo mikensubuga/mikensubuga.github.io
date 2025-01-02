@@ -1,17 +1,17 @@
 ---
 layout: about
 title: about
-permalink: /
+permalink: true
 subtitle: Bioinformatics Implementation Scientist, <a href='https://africacdc.org/people/gerald-mboowa/'>Africa CDC</a>, Addis Ababa, Ethiopia
 
 profile:
   align: right
-  image: 
-  image_circular: false # crops the image to make it circular
+  image: /assets/img/prof_pic.png
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p> </p><br>
-    <p> </p>
- 
+    <p></p><br>
+    <p></p>
+    <img src="/assets/img/prof_pic.png" alt="Profile Picture" style="border-radius: 50%; width: 150px; height: 150px;">
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
