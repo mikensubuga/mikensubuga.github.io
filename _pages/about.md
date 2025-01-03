@@ -29,4 +29,6 @@ Currently, I contribute to global health initiatives at the <a href="https://www
 
 Passionate about translating research into actionable public health outcomes, I actively support Genomics, Bioinformatics, and Data Science programs at the <a href="https://ace.ac.ug/">African Center of Excellence in Bioinformatics & Data-intensive Sciences (ACE)</a> and <a href="https://chs.mak.ac.ug/team/gerald-mboowa" target="_blank">Makerere University</a>.
 
-Let’s connect and explore collaborative opportunities to advance global health, genomics, and public health innovation!
+For more details regarding my research contributions, visit my <a href="https://orcid.org/0000-0001-8445-9414" target="_blank">ORCID</a> and <a href="https://scholar.google.com/citations?user=P9dSDhoAAAAJ" target="_blank">Google Scholar</a> pages.
+
+Let’s connect and explore collaborative opportunities to advance global health, genomics, data science, and public health innovation!
