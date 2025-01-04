@@ -1,12 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - gmboowa
+  - MicroBioGenoHub
+  - GunzIvan28
+ 
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - gmboowa/rMAP
+  - MicroBioGenoHub/HIV-DRIVES
+  - GunzIvan28/rMAP
+ 
