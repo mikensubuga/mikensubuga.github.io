@@ -1,14 +1,13 @@
 ---
 layout: page
 title: Antimicrobial Resistance in East Africa
-description: Understanding Transmission Dynamics and Acquisition of Antimicrobial Resistance at Referral Hospitals and Community Settings in East Africa
+description: 
 img: assets/img/Project2.jpg
 importance: 2
 category: work
 giscus_comments: true
 ---
 <a href="https://gcgh.grandchallenges.org/grant/understanding-transmission-dynamics-and-acquisition-antimicrobial-resistance-referral">Understanding Transmission Dynamics and Acquisition of Antimicrobial Resistance at Referral Hospitals and Community Settings in East Africa
-
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -19,8 +18,21 @@ giscus_comments: true
     Schematic showing antimicrobial resistance (AMR) acquisition and transmission dynamics in the hospital ward.
 </div>
 
-
-
-{% raw %}
-
-{% endraw %}
+<!-- Giscus Integration -->
+<div id="comments">
+    <script src="https://giscus.app/client.js"
+        data-repo="your-username/your-repository"
+        data-repo-id="your-repo-id"
+        data-category="General"
+        data-category-id="your-category-id"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+    </script>
+</div>
