@@ -5,7 +5,7 @@ description: Pathogen detection in HIV-infected children and adolescents with no
 img: assets/img/PHICAMS.jpg
 importance: 1
 category: Career Development - TMA2020CDF-3159
-related_publications: einstein1956investigations, einstein1950meaning
+related_publications: 
 ---
 
 Every project has a beautiful feature showcase page.
