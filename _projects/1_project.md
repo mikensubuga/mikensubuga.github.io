@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: PHICAMS
+description: Pathogen detection in HIV-infected children and adolescents with non-malarial febrile illnesses using metagenomic next-generation sequencing approach in Uganda
+img: assets/img/PHICAMS.jpg
 importance: 1
-category: work
+category: Career Development - TMA2020CDF-3159
 related_publications: einstein1956investigations, einstein1950meaning
 ---
 
@@ -18,7 +18,7 @@ To give your project a background in the portfolio page, just add the img tag to
     layout: page
     title: project
     description: a project with a background image
-    img: /assets/img/12.jpg
+    img: /assets/img/PHICAMS.jpg
     ---
 
 <div class="row">
