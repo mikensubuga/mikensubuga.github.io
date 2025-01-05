@@ -1,14 +1,13 @@
 ---
 layout: page
 title: PHICAMS
-description: Pathogen detection in HIV-infected children and adolescents with non-malarial febrile illnesses using metagenomic next-generation sequencing approach in Uganda
+description: 
 img: assets/img/Project1.jpg
 importance: 1
 category: work
 related_publications: false
 ---
 
-Unveiling Hidden Infections: Pathogen Detection in HIV-Infected Children and Adolescents with Non-Malarial Febrile Illnesses Using Metagenomic Sequencing in Uganda
 
 <a href="https://www.edctp.org/projects-2/edctp2-projects/career-development-fellowships-in-poverty-related-diseases-and-child-and-adolescent-health-2020/">Pathogen detection in HIV-infected children and adolescents with non-malarial febrile illnesses using metagenomic next-generation sequencing approach in Uganda
 
