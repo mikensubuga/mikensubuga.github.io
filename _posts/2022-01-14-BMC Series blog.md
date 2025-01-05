@@ -1,5 +1,5 @@
 ---
-layout: distill
+layout: BMC Series blog
 title: 
 description: Introducing the BMC Series SDG Editorial Board Members: Gerald Mboowa
 tags: distill formatting
