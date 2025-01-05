@@ -11,9 +11,9 @@ nav_order: 6
    College of Health Sciences  
    Department of Immunology & Molecular Biology  
 
-   1.1 MSc. Bioinformatics Yr 1  
+   1.1 MSc. Bioinformatics Yr 1 (https://ace.ac.ug/msc-phd-program/)
 
-       - [1.1.1 Bio-Unix & Shell Scripting](https://ace.ac.ug/msc-phd-program/)
+       - 1.1.1 Bio-Unix & Shell Scripting
 
        - **COURSE Name:** Bio-Unix & Shell Scripting  
        - **COURSE Code:** MSB7103
