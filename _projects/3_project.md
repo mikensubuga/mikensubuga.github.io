@@ -3,7 +3,7 @@ layout: page
 title: CholGen
 description: Establishing capacity for cholera genomic surveillance in Africa 
 img: assets/img/Project3.jpg
-redirect: https://www.gatesfoundation.org/about/committed-grants/2022/11/inv-047157
+redirect: 
 importance: 3
 category: work
 ---
