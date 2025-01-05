@@ -8,7 +8,7 @@ middle_name:
 last_name: Mboowa
 email: gmboowa@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  
+Gerald Mboowa | Scientist, Specializing in Genomics for Global Health  
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: academic-website, gerald-mboowa, mboowa  # add your own keywords or leave empty
@@ -155,7 +155,7 @@ disqus_shortname:  # put your disqus shortname
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
   - name: # medium.com
-    rss_url: https://gmboowa.github.io/feed.xml
+    rss_url: # https://gmboowa.github.io/feed.xml
   - name: 
     posts:
       - url: https://blogs.biomedcentral.com/bmcseriesblog/2022/01/14/introducing-the-bmc-series-sdg-editorial-board-members-gerald-mboowa/
