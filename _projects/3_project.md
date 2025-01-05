@@ -8,8 +8,6 @@ importance: 3
 category: work
 ---
 
-Establishing capacity for cholera genomic surveillance in Africa
-
 <a href="https://bit.ly/3ZzVJWX">Building Africa's Capacity for Cholera Surveillance and Outbreak Response
 
 <div class="row">
