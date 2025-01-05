@@ -1,6 +1,6 @@
 ---
 layout: BMC Series blog
-title: 
+title: BMC Series blog
 description: Introducing the BMC Series SDG Editorial Board Members: Gerald Mboowa
 tags: distill formatting
 giscus_comments: true
