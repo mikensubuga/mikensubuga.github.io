@@ -7,8 +7,6 @@ importance: 2
 category: work
 giscus_comments: false
 ---
-Transmission Dynamics and Acquisition of Antimicrobial Resistance at Referral Hospitals and Community Settings in East Africa
-
 <a href="https://gcgh.grandchallenges.org/grant/understanding-transmission-dynamics-and-acquisition-antimicrobial-resistance-referral">Understanding Transmission Dynamics and Acquisition of Antimicrobial Resistance at Referral Hospitals and Community Settings in East Africa
 
 <div class="row">
