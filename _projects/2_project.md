@@ -21,11 +21,6 @@ giscus_comments: true
 <!-- Giscus Integration -->
 <div id="comments">
     <script src="https://giscus.app/client.js"
-        data-repo="your-username/your-repository"
-        data-repo-id="your-repo-id"
-        data-category="General"
-        data-category-id="your-category-id"
-        data-mapping="pathname"
         data-strict="0"
         data-reactions-enabled="1"
         data-emit-metadata="0"
