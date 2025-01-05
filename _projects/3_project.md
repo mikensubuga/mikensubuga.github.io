@@ -7,6 +7,8 @@ redirect: https://www.gatesfoundation.org/about/committed-grants/2022/11/inv-047
 importance: 3
 category: work
 ---
+Establishing capacity for cholera genomic surveillance in Africa
+
 <a href="https://bit.ly/3ZzVJWX">Genomic Shield: Building Africa's Capacity for Cholera Surveillance and Outbreak Response
 
 <div class="row">
