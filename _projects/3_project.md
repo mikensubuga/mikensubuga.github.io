@@ -1,7 +1,7 @@
 ---
 layout: page
 title: CholGen
-description: Establishing capacity for cholera genomic surveillance in Africa 
+description: 
 img: assets/img/Project3.jpg
 redirect: 
 importance: 3
