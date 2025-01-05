@@ -18,8 +18,3 @@ giscus_comments: true
     Schematic showing antimicrobial resistance (AMR) acquisition and transmission dynamics in the hospital ward.
 </div>
 
-<!-- Static Comments Section -->
-<div id="comments" class="mt-4">
-    <h3>Comments</h3>
-    <p class="text-muted">Commenting is currently unavailable. Please contact us directly for feedback or discussions.</p>
-</div>
