@@ -11,8 +11,9 @@ nav_order: 1
   <p>An up-to-date list is available on <a href="https://scholar.google.com/citations?hl=en&user=P9dSDhoAAAAJ">Google Scholar</a>.</p>
 
   {% if site.scholar and site.scholar.bibliography %}
-    {% bibliography -f {{ site.scholar.bibliography }} %}
+    <!-- Render the bibliography only if the configuration is valid -->
+    {% bibliography -f site.scholar.bibliography %}
   {% else %}
-    <p>No bibliography file found. Please check your site configuration.</p>
+    <p>No bibliography file found. Please check your site's configuration.</p>
   {% endif %}
 </div>
