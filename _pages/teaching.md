@@ -6,7 +6,7 @@ description:
 nav: true
 nav_order: 5
 ---
-# **Academic and Training Resources**
+# **Training Resources**
 
 ---
 
@@ -17,12 +17,14 @@ This course focuses on de novo genome assembly using next-generation sequencing 
 
 **Course Link:** [Taylor Paisie's VEME 2024 NGS De Novo Assembly](https://github.com/taylorpaisie/VEME_2024_NGS_Denovo_Assembly)
 
+
 ---
 
 ### **1.2 Taylor Paisie's VEME 2024 NGS Variant Calling**  
 This course provides comprehensive guidance on variant calling workflows using next-generation sequencing (NGS) data. It is tailored for the VEME 2024 workshop and includes step-by-step instructions and examples.
 
 **Course Link:** [Taylor Paisie's VEME 2024 NGS Variant Calling](https://github.com/taylorpaisie/VEME_2024_NGS_Variant_Calling)
+
 
 ---
 
