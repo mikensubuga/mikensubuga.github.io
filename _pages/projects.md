@@ -19,7 +19,7 @@ horizontal: false
     <!-- Generate vertical cards for each project -->
     <div class="vertical-list">
       {%- for project in sorted_projects -%}
-        {% include projects_vertical.html %}
+        {% include projects_vertical.html project=project %}
       {%- endfor %}
     </div>
     {%- endfor %}
@@ -30,7 +30,7 @@ horizontal: false
     <!-- Generate vertical cards for each project -->
     <div class="vertical-list">
       {%- for project in sorted_projects -%}
-        {% include projects_vertical.html %}
+        {% include projects_vertical.html project=project %}
       {%- endfor %}
     </div>
   {%- endif %}
