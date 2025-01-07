@@ -9,11 +9,12 @@ nav_order: 1
 
 ---
 <!-- _pages/publications.md -->
-<!-- _pages/publications.md -->
 <div class="publications">
- <p>An up-to-date list is available on <a href="https://scholar.google.com/citations?hl=en&user=P9dSDhoAAAAJ">Google Scholar</a>.</p>
+  <p>An up-to-date list is available on <a href="https://scholar.google.com/citations?hl=en&user=czbZn2IAAAAJ&hl">Google Scholar</a>.</p>
 
-
-{% bibliography -f {{ site.scholar.bibliography }} %}
-
+  {% if site.scholar and site.scholar.bibliography %}
+    {% bibliography -f papers.bib %}
+  {% else %}
+    <p>No publications found. Please ensure your bibliography is correctly set up.</p>
+  {% endif %}
 </div>
