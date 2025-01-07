@@ -15,5 +15,5 @@ giscus_comments: false
     </div>
 </div>
 <div class="caption">
-    Schematic showing Project sites for this project.
+    Schematic showing the study workflow and project sites.
 </div>
