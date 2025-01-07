@@ -273,14 +273,12 @@ scholar:
   last_name: [Gerald]
   first_name: [Mboowa]
 
-  style: apa
+ style: apa
   locale: en
-  source: _bibliography/ # Path to the bibliography folder
-  bibliography: references.bib # Name of your bibliography file
-  group_by: year # Field used to group publications
-  group_order: descending # Order of the grouped field
-  replace_strings: true
-  join_strings: true
+
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
   # See https://github.com/alshedivat/al-folio/issues/357.
@@ -296,6 +294,7 @@ scholar:
   query: "@*"
   group_by: year
   group_order: descending
+
 
 # Display different badges withs stats for your publications
 enable_publication_badges:
