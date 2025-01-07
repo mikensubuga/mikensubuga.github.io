@@ -7,12 +7,14 @@ nav: true
 nav_order: 1
 ---
 
+---
 <!-- _pages/publications.md -->
 <div class="publications">
- 
   <p>An up-to-date list is available on <a href="https://scholar.google.com/citations?hl=en&user=P9dSDhoAAAAJ">Google Scholar</a>.</p>
 
-
-{% bibliography -f {{ site.scholar.bibliography }} %}
-
+  {% if site.scholar and site.scholar.bibliography %}
+    {% bibliography -f site.scholar.bibliography %}
+  {% else %}
+    <p>No bibliography file found. Please check your site's configuration.</p>
+  {% endif %}
 </div>
