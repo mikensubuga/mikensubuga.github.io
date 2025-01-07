@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Gerald
-middle_name: 
+middle_name:
 last_name: Mboowa
 email: gmboowa@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -102,7 +102,7 @@ zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
 contact_note: >
-  The best way to reach me is through my personal email gmboowa@gmail.com 
+  The best way to reach me is through my personal email gmboowa@gmail.com
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -275,10 +275,12 @@ scholar:
 
   style: apa
   locale: en
-
-  source: /_bibliography/
-  bibliography: papers.bib
-  bibliography_template: bib
+  source: _bibliography/ # Path to the bibliography folder
+  bibliography: references.bib # Name of your bibliography file
+  group_by: year # Field used to group publications
+  group_order: descending # Order of the grouped field
+  replace_strings: true
+  join_strings: true
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
   # See https://github.com/alshedivat/al-folio/issues/357.
