@@ -7,7 +7,7 @@ importance: 2
 category: work
 giscus_comments: false
 ---
-<a href="https://www.gatesfoundation.org/about/committed-grants/2021/10/inv036379">This project bridges gaps in genomic surveillance by leveraging commercially available RT-qPCR assays as a rapid, cost-effective solution for SARS-CoV-2 VOC screening. 
+<a href="https://www.gatesfoundation.org/about/committed-grants/2021/10/inv036379">Utilizing Commercial RT-qPCR Assays for Efficient and Cost-Effective SARS-CoV-2 Variant Screening in Africa 
 
 
 <div class="row">
