@@ -668,14 +668,25 @@ footer.sticky-bottom {
       }
 
       .abbr {
-        height: 2rem;
         margin-bottom: 0.5rem;
 
         abbr {
           display: inline-block;
           background-color: var(--global-theme-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
+          padding: 0.4rem 0.6rem;
+          font-size: 0.6rem;
+          font-weight: 600;
+          letter-spacing: 0.01em;
+          line-height: 1.4;
+          white-space: normal;
+          word-break: normal;
+          text-align: center;
+          border-radius: 0.25rem;
+
+          @media (min-width: 576px) {
+            display: block;
+            padding: 0.4rem 0.35rem;
+          }
 
           a {
             color: white;
