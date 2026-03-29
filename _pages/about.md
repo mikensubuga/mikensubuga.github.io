@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Research Scientist, <a href='https://research-information.bris.ac.uk/en/persons/mike-nsubuga'>University of Bristol</a>, UK
+#subtitle: Research Scientist, <a href='https://research-information.bris.ac.uk/en/persons/mike-nsubuga'>University of Bristol</a>, UK
 
 profile:
   align: right
@@ -19,8 +19,15 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi! I am a PhD student at the University of Bristol and a part-time Data Scientist at both the [Jean Golding Institute](https://www.bristol.ac.uk/golding/), UK and [Infectious Diseases Institute's ACE](https://ace.ac.ug/), Uganda. My PhD is funded by the Medical Research Council(MRC) under GW4 BioMed2 MRC DTP under the Population Health theme. My project under the supervision of [Prof Kristen Reyher](https://research-information.bris.ac.uk/en/persons/kristen-k-reyher), [Dr. Sion Bayliss](https://research-information.bris.ac.uk/en/persons/sion-c-bayliss), [Prof Andrew Dowsey](https://research-information.bris.ac.uk/en/persons/andrew-dowsey), and [Dr. Lauren Cowley](https://researchportal.bath.ac.uk/en/persons/lauren-cowley) centers on collaborating with the UK Health Security Agency(UKHSA) and Centers for Disease Control and Prevention(CDC) to develop cutting-edge machine learning tools aimed at forecasting outbreaks of foodborne diseases, while also identifying the genomic mechanisms of antimicrobial resistance (AMR).  These tools are used to support public health decision-making and facilitate rapid response to future outbreaks.
+Hi! I am a PhD student at the University of Bristol and a Research Fellow at the African Centre of Excellence in Bioinformatics, working at the intersection of genomics, machine learning, and global health.
 
-I previously did an MSc in Bioinformatics supported by the Fogarty International Center(FIC) of the National Institutes of Health(NIH) under the EANBIT project at Makerere University where my research focussed on evaluating the practicality and broader adaptability of machine learning models, particularly in the realm of identifying antimicrobial resistance within low-middle-income countries(LMICs).
 
-I enjoy contributing to innovations in global health and education. My work spans AMR, genomics, infectious diseases, and education initiatives, with a particular focus on LMICs
+My research focuses on antimicrobial resistance (AMR), where I apply bioinformatics and machine learning to understand the genomic determinants of resistance, virulence, and pathogen evolution. I am particularly interested in developing tools that support real-world public health decision-making, especially in low- and middle-income countries (LMICs).
+
+My PhD, funded by the Medical Research Council (MRC) under the GW4 BioMed2 Doctoral Training Partnership (Population Health theme) and supervised by [Prof Kristen Reyher](https://research-information.bris.ac.uk/en/persons/kristen-k-reyher), [Dr. Sion Bayliss](https://research-information.bris.ac.uk/en/persons/sion-c-bayliss), [Prof Andrew Dowsey](https://research-information.bris.ac.uk/en/persons/andrew-dowsey), and [Dr. Lauren Cowley](https://researchportal.bath.ac.uk/en/persons/lauren-cowley), is conducted in collaboration with the UK Health Security Agency (UKHSA). I develop machine learning approaches to forecast foodborne disease outbreaks and identify genomic mechanisms of AMR, supporting timely and data-driven public health responses.
+
+I am currently a Visiting Researcher at Imperial College London through the GW4 MRC Broadening Horizons programme, working with [Professor Leonid Chindelevitch](https://www.imperial.ac.uk/people/l.chindelevitch) on benchmarking machine learning methods for AMR prediction using large-scale genotype–phenotype datasets.
+
+Previously, I completed an MSc in Bioinformatics at Makerere University under the NIH-funded EANBIT programme (Fogarty International Center), where I evaluated the cross-geographical generalisability of AMR predictive models by leveraging transfer learning to adapt UK-based datasets for clinical application in low- and middle-income countries. I have also worked as a Research Data Scientist at Bristol's Jean Golding Institute (UK) and the Infectious Diseases Institute's ACE (Uganda).
+
+I am passionate about advancing innovations in global health and education, with a particular focus on leveraging data and technology to address challenges in resource-limited settings.
