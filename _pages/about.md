@@ -6,7 +6,7 @@ permalink: /
 
 profile:
   align: right
-  image: mike-nsubuga.png
+  image: mike-nsubuga.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>BS8 1UH</p><br>
