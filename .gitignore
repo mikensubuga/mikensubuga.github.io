@@ -9,3 +9,7 @@ _site
 Gemfile.lock
 vendor
 
+
+# LaTeX build files for the CV
+cv/*
+!cv/*.tex

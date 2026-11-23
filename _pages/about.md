@@ -8,10 +8,6 @@ profile:
   align: right
   image: mike-nsubuga.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>BS8 1UH</p><br>
-    <p>United Kingdom</p>
- 
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
@@ -19,15 +15,12 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi! I am a PhD student at the [University of Bristol](https://research-information.bris.ac.uk/en/persons/mike-nsubuga) and a Research Fellow at the African Centre of Excellence in Bioinformatics, working at the intersection of genomics, machine learning, and global health.
+I am a PhD student at the [University of Bristol](https://research-information.bris.ac.uk/en/persons/mike-nsubuga), funded by the MRC GW4 BioMed2 Doctoral Training Partnership, carrying out my doctoral research across Bristol and [Imperial College London](https://profiles.imperial.ac.uk/m.nsubuga). I work at the intersection of genomics, machine learning and public health, with a focus on foodborne pathogens and antimicrobial resistance (AMR).
 
+**At Bristol**, I am supervised by [Dr Sion Bayliss](https://research-information.bris.ac.uk/en/persons/sion-c-bayliss) and co-supervised by [Prof Kristen Reyher](https://research-information.bris.ac.uk/en/persons/kristen-k-reyher), [Prof Andrew Dowsey](https://research-information.bris.ac.uk/en/persons/andrew-dowsey) and [Dr Lauren Cowley](https://researchportal.bath.ac.uk/en/persons/lauren-cowley), in collaboration with the UK Health Security Agency (UKHSA, formerly Public Health England). I study how foodborne *Salmonella* Enteritidis spreads across the UK and how antimicrobial resistance emerges and moves within the pathogen. I use the UK's largest genomic surveillance dataset for this pathogen to trace how lineages and resistance spread between regions over time, and build machine learning models that predict where an infection is likely to have come from. This kind of source attribution helps public health teams find the origin of outbreaks quickly and target interventions where they will have the most effect.
 
-My research focuses on antimicrobial resistance (AMR), where I apply bioinformatics and machine learning to understand the genomic determinants of resistance, virulence, and pathogen evolution. I am particularly interested in developing tools that support real-world public health decision-making, especially in low- and middle-income countries (LMICs).
+**At Imperial**, I am supervised by [Prof Leonid Chindelevitch](https://www.imperial.ac.uk/people/l.chindelevitch) and co-supervised by Dr Romain Derelle. I benchmark machine learning models that predict antimicrobial resistance from bacterial genomes. I use [CABBAGE](https://academic.oup.com/nar/article/54/16/gkag780/8769244), the largest AMR genotype–phenotype database of its kind, to compare learning methods and ways of representing genomes, and to find which approaches are most accurate and reliable across pathogens and drugs. Identifying which models can be trusted is a step towards using genome sequencing for rapid diagnostics, treatment decisions and surveillance.
 
-My PhD, funded by the Medical Research Council (MRC) under the GW4 BioMed2 Doctoral Training Partnership (Population Health theme) and supervised by [Dr. Sion Bayliss](https://research-information.bris.ac.uk/en/persons/sion-c-bayliss), [Prof Kristen Reyher](https://research-information.bris.ac.uk/en/persons/kristen-k-reyher), [Prof Andrew Dowsey](https://research-information.bris.ac.uk/en/persons/andrew-dowsey), and [Dr. Lauren Cowley](https://researchportal.bath.ac.uk/en/persons/lauren-cowley), is conducted in collaboration with the UK Health Security Agency (UKHSA). I develop machine learning approaches to forecast foodborne disease outbreaks and identify genomic mechanisms of AMR, supporting timely and data-driven public health responses.
+Previously, I completed my MSc in Bioinformatics at Makerere University under the NIH-funded EANBIT programme. Death rates from AMR are highest in sub-Saharan Africa, yet African genomes are under-represented in public databases, so most prediction models are built on data from Europe and North America. My dissertation examined how well machine learning models that predict AMR in *E. coli*, trained on genomes from England, perform on genomes from three sub-Saharan African countries: Uganda, Nigeria and Tanzania ([BMC Genomics, 2024](https://doi.org/10.1186/s12864-024-10214-4)). Knowing where such models can and cannot be relied on shows where more data or better methods are needed; as resistance spreads across countries through travel, trade and the food chain, closing these gaps matters for global AMR surveillance.
 
-I am currently a Visiting Researcher at [Imperial College London](https://profiles.imperial.ac.uk/m.nsubuga) through the GW4 MRC Broadening Horizons programme, working with [Professor Leonid Chindelevitch](https://www.imperial.ac.uk/people/l.chindelevitch) on benchmarking machine learning methods for AMR prediction using large-scale genotype–phenotype datasets.
-
-Previously, I completed an MSc in Bioinformatics at Makerere University under the NIH-funded EANBIT programme (Fogarty International Center), where I evaluated the cross-geographical generalisability of AMR predictive models by leveraging transfer learning to adapt UK-based datasets for clinical application in low- and middle-income countries. I have also worked as a Research Data Scientist at Bristol's Jean Golding Institute (UK) and the Infectious Diseases Institute's ACE (Uganda).
-
-I am passionate about advancing innovations in global health and education, with a particular focus on leveraging data and technology to address challenges in resource-limited settings.
+I have also worked as a Research Data Scientist at Bristol's Jean Golding Institute (UK) and as a Research Fellow at the Infectious Diseases Institute's African Centre of Excellence in Bioinformatics (Uganda).

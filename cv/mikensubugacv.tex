@@ -1,0 +1,260 @@
+% Mike Nsubuga - Curriculum Vitae
+% Compile with: xelatex mikensubugacv.tex   (fonts Charter + Avenir Next ship with macOS)
+\documentclass[10pt]{article}
+\usepackage[a4paper,left=1.9cm,right=1.9cm,top=1.6cm,bottom=1.8cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+% ---- Settings: change these to adjust the whole CV ----------------------
+\setmainfont{Charter}
+\newfontfamily\headfont{Avenir Next}[Ligatures=TeX]
+\definecolor{accent}{HTML}{1B4F72}
+\definecolor{muted}{HTML}{6B7280}
+\definecolor{rulecol}{HTML}{C9D3DD}
+\newlength{\datecol}\setlength{\datecol}{2.6cm}   % width of the date column
+\newlength{\pubcol}\setlength{\pubcol}{0.9cm}     % width of the publication number column
+% Vertical spacing. Every gap in the CV comes from one of these.
+% Gaps never add up: where two meet (e.g. after an entry, before a heading)
+% the larger one wins, so spacing stays the same wherever an entry falls.
+\newlength{\sectiongap}\setlength{\sectiongap}{20pt}  % above a section heading
+\newlength{\headinggap}\setlength{\headinggap}{7pt}   % below a section heading
+\newlength{\subheadgap}\setlength{\subheadgap}{4pt}   % below a sub-heading (years, Thesis...)
+\newlength{\entrygap}\setlength{\entrygap}{10pt}       % between entries and publications
+\newlength{\titlegap}\setlength{\titlegap}{1pt}       % between an entry's title line and its body
+% -------------------------------------------------------------------------
+
+\hypersetup{colorlinks, urlcolor=accent}
+\urlstyle{same}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}  % no stretchy space between paragraphs
+\raggedbottom              % don't stretch gaps to fill a page
+\linespread{1.08}
+
+
+% Footer with name and page number
+\makeatletter
+\def\@oddfoot{\hfil{\headfont\footnotesize\color{muted}Mike Nsubuga \,·\, Curriculum Vitae \,·\, \thepage}\hfil}
+\def\@oddhead{}
+\makeatother
+
+% Section heading: accent caps followed by a hairline rule.
+% \nopagebreak keeps every heading on the same page as its first entry.
+\renewcommand{\section}[1]{%
+  \par\addvspace{\sectiongap}%
+  {\headfont\bfseries\color{accent}\addfontfeatures{LetterSpace=8}\MakeUppercase{#1}}%
+  \hspace{0.6em}{\color{rulecol}\leaders\hrule height 0.5pt depth 0pt\hfill}\par\nopagebreak\addvspace{\headinggap}}
+\newcommand{\subhead}[1]{\par\addvspace{\entrygap}%
+  {\headfont\small\bfseries\color{muted}#1}\par\nopagebreak\addvspace{\subheadgap}}
+\newcommand{\intro}[1]{\par\addvspace{\entrygap}{\small\color{muted}#1}\par\nopagebreak\addvspace{\entrygap}}
+
+% \entry{dates}{title}{right-hand detail}{body}  (leave body empty for a one-line entry)
+\newcommand{\entry}[4]{%
+  \par\addvspace{\entrygap}%
+  \noindent\parbox[t]{\datecol}{\raggedright\leavevmode\headfont\small\color{muted}#1}%
+  \parbox[t]{\dimexpr\linewidth-\datecol\relax}{\raggedright\leavevmode
+    \textbf{#2}\hfill{\small\color{muted}#3}\ifx&#4&\else\\[\titlegap]#4\fi}%
+  \par\addvspace{\entrygap}}
+\newcommand{\role}[1]{\textit{#1}}
+\newcommand{\detail}[1]{{\small\color{muted}#1}}
+
+% Publications: numbered, own name in bold
+\newcounter{pubno}
+\newcommand{\me}{\textbf{Nsubuga,~M.}}
+\newcommand{\pub}[1]{\stepcounter{pubno}%
+  \par\addvspace{\entrygap}%
+  \noindent\parbox[t]{\pubcol}{\raggedright\leavevmode\headfont\small\color{muted}[\thepubno]}%
+  \parbox[t]{\dimexpr\linewidth-\pubcol\relax}{\raggedright #1}\par\addvspace{\entrygap}}
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{doi:#1}}
+
+\begin{document}
+
+% ---- Header --------------------------------------------------------------
+\begin{minipage}[b]{0.55\linewidth}
+  {\headfont\fontsize{26}{30}\selectfont\bfseries Mike Nsubuga}\\[4pt]
+  {\headfont\color{accent}PhD Researcher \,·\, Genomics, Machine Learning \& AMR}
+\end{minipage}\hfill
+\begin{minipage}[b]{0.44\linewidth}\raggedleft\small
+  {\headfont\footnotesize\color{muted}Bristol}\enspace\href{mailto:mike.nsubuga@bristol.ac.uk}{mike.nsubuga@bristol.ac.uk}\\
+  {\headfont\footnotesize\color{muted}Imperial}\enspace\href{mailto:m.nsubuga@imperial.ac.uk}{m.nsubuga@imperial.ac.uk}\\
+  {\headfont\footnotesize\color{muted}Website}\enspace\href{https://mikensubuga.github.io/}{mikensubuga.github.io}
+\end{minipage}
+\par\vspace{8pt}{\color{accent}\hrule height 1.2pt}\vspace{2pt}
+
+% ==========================================================================
+\section{Education}
+\entry{2023 -- 2027}{University of Bristol, \textmd{with} Imperial College London}{Bristol \& London, UK}{%
+  \role{Ph.D.}, MRC GW4 BioMed2 Doctoral Training Partnership\\
+  \detail{Research carried out at both institutions; degree awarded by the University of Bristol.}\\
+  \detail{Thesis: Genomic epidemiology, source attribution and machine learning prediction of antimicrobial resistance in bacterial pathogens.}\\
+  \detail{Supervisors (Bristol): Sion Bayliss, Kristen Reyher, Andrew Dowsey and Lauren Cowley (Bath)}\\
+  \detail{Supervisors (Imperial): Leonid Chindelevitch and Romain Derelle}}
+\entry{2020 -- 2022}{Makerere University}{Kampala, Uganda}{%
+  \role{M.Sc. in Bioinformatics}, First Class Honours\\
+  \detail{Dissertation: A machine learning approach to predict \textit{E. coli} antibacterial resistance using whole-genome sequencing data in Uganda. NIH-Fogarty EANBIT M.Sc. Fellowship.}\\
+  \detail{Supervisors: Daudi Jjingo and Gerald Mboowa}}
+\entry{2016 -- 2019}{Makerere University}{Kampala, Uganda}{%
+  \role{B.Sc. in Information Technology}, First Class Honours}
+
+% ==========================================================================
+\section{Visiting Research Appointments}
+\entry{2026 -- present}{Imperial College London}{London, UK}{%
+  \role{Visiting Researcher}, MRC Centre for Global Infectious Disease Analysis\\
+  \detail{Benchmarking machine learning methods and genome representations for AMR prediction using the CABBAGE genotype--phenotype database. Forms one of three PhD thesis chapters.}}
+
+% ==========================================================================
+\section{Research Experience}
+\entry{2023 -- 2024}{University of Bristol}{Bristol, UK}{%
+  \role{Ask-JGI Research Data Scientist}, Jean Golding Institute of Data Science}
+\entry{2023}{University of Cape Town}{Cape Town, South Africa}{%
+  \role{Research Fellow}, Sickle in Africa Consortium, Division of Human Genetics}
+\entry{2022 -- 2023}{Uganda Virus Research Institute}{Entebbe, Uganda}{%
+  \role{Research Fellow}, Open Data Science Platform -- eLwazi, Department of Entomology}
+\entry{2020 -- 2023}{Makerere University}{Kampala, Uganda}{%
+  \role{Research Fellow \& Bioinformatics Trainee}, Infectious Diseases Institute, African Center of Excellence in Bioinformatics}
+
+% ==========================================================================
+\section{Awards, Honours and Fellowships}
+\entry{2024}{Travel Award}{Medical Research Council}{%
+  To attend the 2024 Computational Genomics Summer Institute, University of California, Los Angeles.}
+\entry{2023}{Ph.D. Studentship}{Medical Research Council}{%
+  Four-year Ph.D. studentship at the University of Bristol.}
+\entry{2022}{Travel Scholarship}{Open Science Grid / NSF}{%
+  To attend the OSG School at the University of Wisconsin--Madison.}
+\entry{2021}{M.Sc. Fellowship}{NIH Fogarty}{%
+  EANBIT Fellowship for a two-year Master's programme in Bioinformatics at Makerere University.}
+\entry{2020}{Top of Class Award}{Makerere University}{%
+  Graduated top of the B.Sc. Information Technology class of 2019.}
+
+% ==========================================================================
+\section{Publications}
+\subhead{Preprints}
+\pub{Atwine, M. T., Kintu, T. M., Lujumba, I., Mbabali, I., Muwonge, K., Muwonge, L., Nakiire, L., Ntono, V., \me, Galiwango, R., Lunkuse, S., Kebirungi, G., \& Jjingo, D. (2026). Development and evaluation of HEAL: A bilingual English--Luganda RAG chatbot for disease surveillance in Uganda. \textit{Research Square} [preprint]. \doi{10.21203/rs.3.rs-10357473/v1}}
+\pub{Kateregga, M., Wanyana, I., Kwagala, R. K., Senoga, J., Kamuhanda, S., \me, Batte, C., \& Kananura, R. M. (2026). Early diagnosis of ischemic stroke on non-contrast CT scans using a convolutional neural network: A case study from Mulago National Referral Hospital, Uganda. \textit{Research Square} [preprint]. \doi{10.21203/rs.3.rs-9914433/v1}}
+
+\subhead{2027}
+\pub{Njeru, P. N., Kakooza-Mwesige, A., Muwonge, K., Kebirungi, G., \me, Mutegeki, H., Mason, A., Jjingo, D., \& Koltai, D. (2027). Pilot testing an epilepsy self-management and resilience smartphone application for adolescents and young adults in Uganda. \textit{Epilepsy \& Behavior}, 186, 111334. \doi{10.1016/j.yebeh.2026.111334}}
+
+\subhead{2026}
+\pub{Lukyamuzi, E., Kimbowa Wamala, T., Ssekagiri, A., Galiwango, R., Kebirungi, G., Mugume, A., \me, Maslamoney, S., Panji, S., Mulder, N. J., Jjingo, D., \& Kayondo, J. (2026). A scalable HPC framework for bioinformatics in resource-limited settings: design principles, implementation, and sustainability from the UVRI experience. \textit{Bioinformatics}, 42(4), btag149. \doi{10.1093/bioinformatics/btag149}}
+\pub{Atwine, M. T., Jjingo, D., \me, Serunjogi, R., Mbabaali, I., Lujumba, I., David, B., Kintu, T., Galiwango, R., \& Kebirungi, G. (2026). A bi-lingual chatbot implementation for pandemic response using the transformer-based approach. \textit{PLOS Digital Health}, 5(4), e0001256. \doi{10.1371/journal.pdig.0001256}}
+\pub{\me, Kebirungi, G., Please, H., Buyego, P., Mutegeki, H., Kimera, R., Dhanda, J., Cruz, P., McCarthy, M., Hurt, D., Giovanni, M. Y., Whalen, C., Tartakovsky, M., \& Jjingo, D. (2026). SomaVR: A low-cost virtual reality platform and implementation framework for medical education in resource-limited settings. \textit{PLOS Digital Health}, 5(2), e0001253. \doi{10.1371/journal.pdig.0001253}}
+\pub{Jjingo, D., Walakira, A., Hashim, S., Cheickna, C., Galiwango, R., Kibet, C., Kivunike, F. N., Mboowa, G., Kakembo, F. E., Ayodele, B., Entfellner, J.-B. D., de Villiers, S., Wambui, K., Fatumo, S., Chikowore, T., Mukisa, J., \me, Bbosa, N., Mulindwa, J., \ldots\ H3Africa Consortium. (2026). Pathways, outputs and impact of NIH-supported bioinformatics and genomics graduate trainees in Africa. \textit{Briefings in Bioinformatics}, 27(1), bbag046. \doi{10.1093/bib/bbag046}}
+
+\subhead{2025}
+\pub{Galiwango, R., Whalen, C. J., Kebirungi, G., Atwine, M. T., Kimera, R., Ssekagiri, A., Kimbowa, T. W., Lukyamuzi, E., \me, Odsp, eLwazi, Ssentongo, L., Mutegeki, H., Fonner, J. M., Wuerthwein, F., Berman, A., Okalebo, L. B., McCarthy, M., Kramer, V. S., Quinones, M., \ldots\ Jjingo, D. (2025). Ten simple rules for building and maintaining sustainable high-performance computing infrastructure for research in resource-limited settings. \textit{PLOS Computational Biology}, 21(9), e1013481. \doi{10.1371/journal.pcbi.1013481}}
+\pub{Lujumba, I., Adam, Y., Ziaei Jam, H., Isewon, I., Monnakgotla, N., Li, Y., Onyido, B., Fredrick, K., Adegoke, F., Emmanuel, J., Adeyemi, J., Ibitoye, O., Owusu-Ansah, S., Akanle, M. B., Joseph, H., \me, Galiwango, R., Okitwi, M., Magdalene, N., \ldots\ Adebiyi, E. (2025). A practical guide to identifying associations between tandem repeats and complex human traits using consensus genotypes from multiple tools. \textit{Nature Protocols}, 1--19. \doi{10.1038/s41596-025-01231-y}}
+\pub{Gregorova, M., Santopaolo, M., Garner, L. C., Hayati, R. F., Diamond, D., Ramamurthy, N., Tran, V. T., Nguyen, N. M., Heesom, K. J., Nguyen, V. L., Jones, E., \me, Luscombe, C., Vo, H. T. M., Ho, C. Q., Nguyen, C. T. X., Dong, T. T. H., Huynh, D. T. L., Cao, T. T., \ldots\ Rivino, L. (2025). Early NK-cell and T-cell dysfunction marks progression to severe dengue in patients with obesity and healthy weight. \textit{Nature Communications}, 16(1), 5569. \doi{10.1038/s41467-025-60941-9}}
+\pub{Please, H., \me, Kintu, T. M., Bakesiga, A., Stewart, K., \& Navarro, S. (2025). Powering precision medical education through AI-generated country-specific global surgery podcasts: A low-or-middle-income-country case study. \textit{British Journal of Surgery}. \doi{10.1093/bjs/znaf128.052}}
+\pub{Kintu, T., \me, Bakesiga, A., Please, H., Stewart, K., \& Navarro, S. M. (2025). Precision education and generative AI in surgery utilization study: A framework for global surgical education. \textit{Journal of Clinical and Translational Science}, 9(s1), 114. \doi{10.1017/cts.2024.994}}
+\pub{Bolton, W., Nathani, P., Please, H., Philomen, J., Kahar, N. A., Aruparayil, N., Bandyopadhyay, S., Boodhoo, V., Magoha, M., \me, Mishra, A., Jani, P., Burke, J., Mathew, R., \& Culmer, P. (2025). Accelerating innovation by integrating artificial intelligence into a global surgery hackathon. \textit{International Health Trends and Perspectives}, 5(1). \doi{10.32920/ihtp.v5i1.2332}}
+\pub{\me, Kintu, T. M., Please, H., Stewart, K., \& Navarro, S. M. (2025). Enhancing trauma triage in low-resource settings using machine learning: A performance comparison with the Kampala Trauma Score. \textit{BMC Emergency Medicine}, 25(1), 14. \doi{10.1186/s12873-025-01175-2}}
+\pub{Nabisubi, P., Kanyerezi, S., Kebirungi, G., Sserwadda, I., \me, Kisitu, G., Nahirya, P. N., Mulindwa, B., Akabwai, G. P., Nantongo, S., Kekitiinwa, A., Kigozi, E., Luutu, N. M., Katabazi, F. A., Kalema, L., Katabalwa, A., Jjingo, D., \& Mboowa, G. (2025). Beyond the fever: Shotgun metagenomic sequencing of stool unveils pathogenic players in HIV-infected children with non-malarial febrile illness. \textit{BMC Infectious Diseases}, 25(1), 96. \doi{10.1186/s12879-025-10517-1}}
+
+\subhead{2024}
+\pub{\me, Galiwango, R., Jjingo, D., \& Mboowa, G. (2024). Generalizability of machine learning in predicting antimicrobial resistance in \textit{E. coli}: A multi-country case study in Africa. \textit{BMC Genomics}, 25(1), 287. \doi{10.1186/s12864-024-10214-4}}
+\pub{Babirye, S. R., \me, Mboowa, G., Batte, C., Galiwango, R., \& Kateete, D. P. (2024). Machine learning-based prediction of antibiotic resistance in \textit{Mycobacterium tuberculosis} clinical isolates from Uganda. \textit{BMC Infectious Diseases}, 24(1), 1391. \doi{10.1186/s12879-024-10282-7}}
+\pub{\me, Mutegeki, H., Jjingo, D., et al. (2024). The Ugandan sickle Pan-African research consortium registry: design, development, and lessons. \textit{BMC Medical Informatics and Decision Making}, 24, 212. \doi{10.1186/s12911-024-02618-9}}
+\pub{Mboowa, G., Kakooza, F., Egesa, M., Tukwasibwe, S., Kanyerezi, S., Sserwadda, I., Kidenya, B. R., Kabahita, J. M., Namaganda, M. M., \me, Nabisubi, P., Ayitewala, A., Kebirungi, G., Nakafu, E., \& Akwii, N. P. (2024). The rise of pathogen genomics in Africa. \textit{F1000Research}, 13, 468. \doi{10.12688/f1000research.147114.1}}
+\pub{Please, H., Narang, K., Bolton, W., \me, Luweesi, H., Richards, N. B., Dalton, J., Tendo, C., Khan, M., Jjingo, D., Bhutta, M. F., Petrakaki, D., \& Dhanda, J. (2024). Virtual reality technology for surgical learning: Qualitative outcomes of the first virtual reality training course for emergency and essential surgery delivered by a UK--Uganda partnership. \textit{BMJ Open Quality}, 13(1). \doi{10.1136/bmjoq-2023-002477}}
+
+\subhead{2022}
+\pub{Buyego, P., Katwesigye, E., Kebirungi, G., \me, Nakyejwe, S., Cruz, P., McCarthy, M. C., Hurt, D., Kambugu, A., Arinaitwe, J. W., Ssekabira, U., \& Jjingo, D. (2022). Feasibility of virtual reality based training for optimising COVID-19 case handling in Uganda. \textit{BMC Medical Education}, 22(1), 274. \doi{10.1186/s12909-022-03294-x}}
+
+\subhead{Thesis}
+\pub{\me\ (2023). \textit{A machine learning approach to predict E. coli antibacterial resistance using whole-genome sequencing data} [M.Sc. thesis, Makerere University]. \href{http://makir.mak.ac.ug/handle/10570/13162}{makir.mak.ac.ug/handle/10570/13162}}
+
+% ==========================================================================
+\section{Invited Talks}
+\entry{Jan 2027}{ESCMID Antimicrobial Stewardship Certification Programme \textmd{(upcoming)}}{}{%
+  \detail{How can we use AI for microbiological diagnosis? Module: Antimicrobial Stewardship in Low- and Middle-Income Countries}}
+\entry{Nov 2026}{AMR, a One Health Challenge course, Fondation Mérieux \textmd{(keynote)}}{France}{%
+  \detail{What can we expect from AI to better survey and control AMR, particularly in LMICs?}}
+\entry{Apr 2026}{ESCMID Global \textmd{(keynote)}}{Germany}{%
+  \detail{Is AI the key to acceleration of antimicrobial stewardship in LMICs?}}
+\entry{Nov 2025}{AMR, a One Health Challenge course, Fondation Mérieux \textmd{(keynote)}}{France}{%
+  \detail{What can we expect from AI to better survey and control AMR, particularly in LMICs?}}
+\entry{May 2025}{UKHSA PhD Student Day}{Harwell, UK}{%
+  \detail{Utilising machine learning for tracing gastrointestinal outbreaks}}
+\entry{Apr 2024}{AMR, a One Health Challenge course, Fondation Mérieux}{France}{%
+  \detail{Combatting AMR using AI in low-resource settings}}
+\entry{Mar 2024}{MRC GW4 DTP}{UK}{%
+  \detail{Utilising machine learning for tracing gastrointestinal outbreaks and antimicrobial resistance}}
+\entry{Aug 2023}{AMR Force, University of Bristol}{Bristol, UK}{%
+  \detail{Empowering low- and middle-income countries against antimicrobial resistance with AI and whole-genome sequencing}}
+\entry{Jul 2022}{Open Science Grid School, University of Wisconsin--Madison}{USA}{%
+  \detail{Ugandan AI COVID-19 chatbot for automated and personalised symptom assessment in Luganda and English}}
+\entry{Apr 2022}{Virtual Reality in Medicine and Surgery Conference (VRiMS)}{Uganda}{}
+\entry{Apr 2022}{Sickle in Africa Consortium Meeting}{South Africa}{%
+  \detail{Optimising the SickleInAfrica registry data collection workflow using site-specific clinical processes}}
+\entry{Mar 2022}{COAST Project}{Uganda}{%
+  \detail{End-to-end AI and data systems for targeted surveillance and management of COVID-19 and future pandemics affecting Uganda}}
+
+% ==========================================================================
+\section{Poster Presentations}
+\entry{2025}{Genome Science}{Newcastle, UK}{%
+  \detail{Characterising regionally associated AMR lineages from a decade of genomic surveillance in \textit{Salmonella enterica} serovar Enteritidis}}
+\entry{2025}{International Symposium on Salmonella and Salmonellosis (I3S)}{Saint-Malo, France}{%
+  \detail{Characterising regionally associated AMR lineages from a decade of genomic surveillance in \textit{Salmonella enterica} serovar Enteritidis. Nsubuga, M., Reyher, K., Dowsey, A., Cowley, L., Chattaway, M. A., \& Bayliss, S.}}
+\entry{2024}{NIHR HPRU in Gastrointestinal Infections Conference}{Birmingham, UK}{%
+  \detail{Mapping the distribution of AMR in \textit{Shigella sonnei}. Nsubuga, M., Tam, Y. L., de Silva, M., Hall, J., Cowley, L., Jenkins, C., Baker, K., \& Bayliss, S. \href{http://hprugi.nihr.ac.uk/media/f1uc4ayb/mike-nsubuga.pdf}{[poster]}}}
+\entry{2024}{NIHR HPRU Genomics and Enabling Data Conference}{London, UK}{%
+  \detail{Mapping the distribution of AMR in \textit{Shigella sonnei}}}
+
+% ==========================================================================
+\section{Teaching Experience}
+\entry{2024 -- present}{University of Bristol}{Bristol, UK}{%
+  \role{Teaching Assistant}, School of Engineering Mathematics \& Technology\\
+  \detail{EMATM0047 Data Science Project; SEMT20003 Methods of Artificial Intelligence; EMATM0048 Software Development: Programming \& Algorithms}}
+\entry{2021 -- 2022}{H3ABioNet and Wellcome Connecting Science}{}{%
+  \role{Teaching Assistant}, Next Generation Sequencing short course}
+\entry{2018 -- 2019}{Makerere University}{Kampala, Uganda}{%
+  \role{Tutorial Assistant}, C and Java programming, Department of Computer Science}
+
+% ==========================================================================
+\section{Supervision and Mentorship}
+\subhead{Co-supervision}
+\entry{2024 -- 2025}{Mansi Chandra}{University of Bristol}{\detail{M.Sc. in Bioinformatics}}
+\entry{2023 -- 2026}{Juliet Nabateesa}{Makerere University}{\detail{M.Sc. in Bioinformatics}}
+\subhead{Mentorship}
+\entry{2023 -- 2025}{Rebecca Nakitandwe}{Makerere University}{\detail{M.Sc. in Health Informatics}}
+\entry{2022 -- 2024}{Henry Mutegeki}{Makerere University}{\detail{M.Sc. in Computer Science (Google DeepMind Scholar)}}
+\entry{2022 -- 2024}{Sandra Babirye}{Makerere University}{\detail{M.Sc. in Bioinformatics (MakDarta Fellow)}}
+\entry{2022 -- 2024}{Florence Nakabiri}{Makerere University}{\detail{M.Sc. in Bioinformatics}}
+
+% ==========================================================================
+\section{Work Experience}
+\entry{2020 -- 2022}{Supporting African Maths Initiatives (SAMI)}{UK}{%
+  \role{Software Developer} (volunteer)}
+\entry{2020}{Statistics for Sustainable Development (Stats4SD)}{Reading, UK}{%
+  \role{Programming Intern}}
+
+% ==========================================================================
+\section{Service, Outreach and Leadership}
+\entry{2024 -- 2025}{DataFace Programme, Cheltenham Festivals}{UK}{%
+  Featured in training videos for DataFace, a UK-wide schools programme that helps students explore real-world issues through data, building their confidence in understanding, interpreting and communicating data through visual storytelling. Judge at the programme's final competition. \href{https://www.cheltenhamfestivals.org/our-projects/dataface}{cheltenhamfestivals.org/our-projects/dataface}}
+
+\intro{Supporting African Maths Initiatives (SAMI), a UK charity improving access to and quality of mathematics education in Africa:}
+\entry{2020}{SAMI Maths Club App}{Software Developer}{%
+  A collection of mathematical problems and puzzles to support mathematical thinking and problem solving, used in five African countries during Maths Camp. \href{https://mathsclub.samicharity.co.uk/}{mathsclub.samicharity.co.uk}}
+\entry{2020 -- 2021}{Card Deck}{Lead Software Developer}{%
+  A web and mobile application with a printed card deck of games, puzzles and mathematical facts. \href{https://cards.virtualmathscamp.com/}{cards.virtualmathscamp.com}}
+\entry{2020 -- 2021}{UNICEF Parenting for Lifelong Health}{Junior Developer}{%
+  An open-source, evidence-based parenting app supporting parents and caregivers during the COVID-19 pandemic and beyond.}
+
+\intro{PICSA, a University of Reading method combining climate data with farmers' knowledge to support agricultural decision-making in Africa:}
+\entry{2022 -- 2023}{PICSA App}{Technical Lead}{%
+  Ran field digital training and workshops for farmers in Malawi and Zambia on implementing the PICSA approach. \href{https://picsa.app/}{picsa.app}}
+
+% ==========================================================================
+\section{Other Previous Projects}
+\entry{2021 -- 2025}{Sickle Pan-African Research Consortium (SPARCO) Uganda}{Lead Developer}{%
+  Strengthening capacity for clinical care, research and training in sickle cell disease. \detail{Funded by NIH/NHLBI, in collaboration with the University of Cape Town.}}
+\entry{2023}{AI for Health Equity (HEAL)}{Web Developer}{%
+  Transforming pandemic preparedness in Uganda using large language models. \detail{Funded by the Bill \& Melinda Gates Foundation.} \href{https://heal.aceuganda.org/}{heal.aceuganda.org}}
+\entry{2021 -- 2023}{Epilepsy SMART App}{Lead Software Developer}{%
+  Epilepsy self-management and resilience application for adolescents and their community. \detail{Funded by the Epilepsy Foundation, in collaboration with Duke University.} \href{https://github.com/aceuganda/epilepsy-smart-app}{github.com/aceuganda/epilepsy-smart-app}}
+\entry{2021 -- 2022}{AI-based COVID-19 Chatbot for Uganda}{Junior Data Scientist}{%
+  \detail{Funded by the International Development Research Centre (IDRC).}}
+
+\end{document}
