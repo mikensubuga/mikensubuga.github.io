@@ -11,5 +11,5 @@ vendor
 
 
 # LaTeX build files for the CV
-cv/*
-!cv/*.tex
+_cv/*
+!_cv/*.tex
